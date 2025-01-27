@@ -34,11 +34,11 @@ graph TD
     B --> D[LLM Gateway Service]
     
     subgraph LLM_Gateway [LLM Gateway Service]
-        D --> D1[API Gateway Facade\n(app/routes/api.llmcall.ts)]
-        D1 --> D2[Token Manager\n(app/components/chat/APIKeyManager.tsx)]
-        D2 --> D3[Validation Service\n(app/lib/api/validateRequest.ts)]
-        D3 --> D4[Provider Adapter\n(app/utils/constants.ts#DEFAULT_PROVIDERS)]
-        D4 --> D5[Fallback Router\n(app/lib/api/fallback.ts)]
+        D --> D1[API Gateway Facade<br>app/routes/api.llmcall.ts]
+        D1 --> D2[Token Manager<br>app/components/chat/APIKeyManager.tsx]
+        D2 --> D3[Validation Service<br>app/lib/api/validateRequest.ts]
+        D3 --> D4[Provider Adapter<br>app/utils/constants.ts DEFAULT_PROVIDERS]
+        D4 --> D5[Fallback Router<br>app/lib/api/fallback.ts]
     end
     
     subgraph WebContainer [WebContainer Runtime]
